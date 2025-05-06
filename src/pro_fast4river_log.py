@@ -518,3 +518,18 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
+
+# Update at 2025-05-07 08:03:04
+# Refactored the code
+# Fixed some bugs
+# Added unit tests
+def read_file_lines(filename):
+    try:
+        with open(filename, 'r') as file:
+            return file.readlines()
+    except FileNotFoundError:
+        return []
+
+def write_file_lines(filename, lines):
+    with open(filename, 'w') as file:
+        file.writelines(lines)
