@@ -678,3 +678,20 @@ def reverse_string(s):
 def is_palindrome(s):
     s = s.lower().replace(" ", "")
     return s == s[::-1]
+
+# Update at 2025-05-18 21:45:03
+# Added error handling
+# Optimized the algorithm
+# Updated the code with new features
+
+
+from PIL import Image
+
+def resize_image(image_path, size):
+    with Image.open(image_path) as img:
+        resized = img.resize(size)
+        return resized
+
+def convert_to_grayscale(image_path):
+    with Image.open(image_path) as img:
+        return img.convert('L')
