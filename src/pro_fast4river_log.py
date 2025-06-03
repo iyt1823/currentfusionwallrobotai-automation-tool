@@ -934,3 +934,21 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
+
+# Update at 2025-06-03 21:24:10
+# Refactored the code
+
+
+class Stack:
+    def __init__(self):
+        self.items = []
+    
+    def push(self, item):
+        self.items.append(item)
+    
+    def pop(self):
+        if not self.is_empty():
+            return self.items.pop()
+    
+    def is_empty(self):
+        return len(self.items) == 0
