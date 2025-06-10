@@ -1056,3 +1056,16 @@ def reverse_string(s):
 def is_palindrome(s):
     s = s.lower().replace(" ", "")
     return s == s[::-1]
+
+# Update at 2025-06-11 05:57:07
+# This is a random comment
+
+from datetime import datetime, timedelta
+
+def get_date_range(start_date, end_date):
+    date_list = []
+    current_date = start_date
+    while current_date <= end_date:
+        date_list.append(current_date)
+        current_date += timedelta(days=1)
+    return date_list
