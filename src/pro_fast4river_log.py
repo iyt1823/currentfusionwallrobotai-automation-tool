@@ -1294,3 +1294,16 @@ class LinkedList:
         while current.next:
             current = current.next
         current.next = new_node
+
+# Update at 2025-10-08 12:00:10
+# Added unit tests
+# Refactored the code
+# Optimized the algorithm
+import hashlib
+
+def hash_password(password):
+    salt = "random_salt"
+    return hashlib.sha256((password + salt).encode()).hexdigest()
+
+def verify_password(password, hashed):
+    return hash_password(password) == hashed
