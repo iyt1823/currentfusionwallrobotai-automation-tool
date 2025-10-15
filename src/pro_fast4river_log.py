@@ -1417,3 +1417,16 @@ def validate_email(email):
 def extract_phone_numbers(text):
     pattern = r'\d{3}-\d{3}-\d{4}'
     return re.findall(pattern, text)
+
+# Update at 2025-10-15 16:56:09
+# Updated the code with new features
+# Refactored the code
+# This is a random comment
+
+
+def reverse_string(s):
+    return s[::-1]
+
+def is_palindrome(s):
+    s = s.lower().replace(" ", "")
+    return s == s[::-1]
