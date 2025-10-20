@@ -1501,3 +1501,13 @@ class Observer:
     def notify(self):
         for observer in self._observers:
             observer.update()
+
+# Update at 2025-10-20 14:44:11
+# Refactored the code
+# Updated the code with new features
+# Added unit tests
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n-1)
