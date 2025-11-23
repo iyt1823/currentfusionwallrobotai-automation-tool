@@ -1616,3 +1616,26 @@ def read_file_lines(filename):
 def write_file_lines(filename, lines):
     with open(filename, 'w') as file:
         file.writelines(lines)
+
+# Update at 2025-11-24 02:17:04
+# Refactored the code
+# This is a random comment
+# Added documentation
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+    
+    def append(self, data):
+        new_node = Node(data)
+        if not self.head:
+            self.head = new_node
+            return
+        current = self.head
+        while current.next:
+            current = current.next
+        current.next = new_node
